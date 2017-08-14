@@ -1,0 +1,320 @@
+body{
+  box-sizing: border-box;
+  font-family: 'Share', cursive;
+  background-color: #b3daff;
+}
+
+/*TITLE PAGE STYLING*/
+
+header{
+  border: solid black 1px;
+  border-radius: 5px;
+  background-color: #ffffcc;
+  position: relative;
+  display: flex;
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+/* nth child target nth occurance of element target 1st item*/
+
+header div:nth-child(1){
+  width: 20%;
+  padding: 10px;
+}
+header div:nth-child(2){
+  width: 60%;
+}
+header div:nth-child(3){
+  width: 20%;
+  padding: 10px;
+}
+
+/*
+@media only screen and (min-width: 340px){
+  
+  header div:nth-child(1){
+  width: 30%;
+  padding: 10px;
+  }
+  header div:nth-child(2){
+  width: 40%;
+  }
+  header div:nth-child(3){
+  width: 30%;
+  padding: 10px;
+  }
+}
+*/
+.blocks, .numbers{
+  /*position: absolute;*/
+  width: 100px;
+  height: 100px;
+  
+}
+
+.blocks{
+  left: 85px;
+  top: 13px;
+}
+
+.numbers{
+  right: 100px;
+  top: 20px;
+}
+
+h1, h2{
+  font-family: 'Chewy', cursive;
+}
+
+.questionInfo{
+  font-weight: 500;
+  letter-spacing: 1px;
+}
+
+h1{
+  text-align: center;
+  font-weight: 400;
+  font-size: 38px; 
+  color: #20603C;
+}
+
+.start{
+  border: solid black 1px;
+  background-color: #ffffcc;
+  border-radius: 5px;
+  width: 350px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  color: #20603C;
+}
+
+.startButton{
+  border: solid black 1px;
+  border-radius: 50%;
+  padding: 10px;
+  cursor: pointer;
+  background: green;
+  color: white;
+  transition-duration: 0.2s;
+  box-shadow: 0 5px #666;
+  margin-bottom: 10px;
+  
+}
+.startButton:hover{
+  background: #00e600;
+  color: black;
+}
+
+.startButton:active{
+  box-shadow: 0 2px #666;
+  transform: translateY(4px);
+}
+
+/*QUESTION PAGE STYLING*/
+/*QUESTION STYLE*/
+h2{
+  border: solid black 1px;
+  border-radius: 5px;
+  background: #ffffcc;
+  padding-left: 15px;
+  letter-spacing: 1px;
+  font-weight: 400;
+}
+
+/*COLOR QUESTION STYLE*/
+
+.answers{
+  border: solid black 1px;
+  border-radius: 5px;
+  display: block;
+  width: 300px;
+  padding: 5px;
+  cursor: pointer;
+  margin-bottom: 10px;
+}
+
+.correct{
+  border: solid yellow 5px;
+}
+
+.yellow{
+  background: yellow;
+}
+
+.blue{
+  background: blue;
+}
+
+.pink{
+  background: pink;
+}
+
+.red{
+  background: red;
+}
+
+.orange{
+  background: #ff5d00;
+}
+
+.brown{
+  background: #602300;
+}
+
+.purple{
+  background: purple;
+}
+
+.black{
+  background: black;
+}
+
+.white{
+  background: white;
+}
+
+.green{
+  background: green;
+}
+
+/*SHAPE QUESTION STYLE*/
+
+.shapeAnswer, .textAnswer{
+  display: block;
+  margin-bottom: 10px;
+  cursor: pointer;
+}
+
+.circle{
+  width: 100px;
+  margin-left: 7px;
+}
+
+.rectangle{
+  width: 100px;
+  margin-left: 10px;
+}
+
+.star{
+  width: 100px;
+  margin-left: 5px;
+}
+
+.diamond{
+  width: 100px;
+  margin-left: 5px;
+}
+
+.heart{
+  width: 115px;
+  
+}
+
+.square{
+  width: 75px;
+  margin-left: 17px;
+}
+
+.octagon{
+  width: 85px;
+  margin-left: 15px;
+}
+
+.oval{
+  width: 100px;
+  margin-left: 5px;
+}
+
+/*NUMBER & LETTER QUESTION STLYE*/
+
+.text{
+  font-size: 40px;
+  
+}
+/*STATUS BAR STLYLING*/
+
+.questionNum p, .score p{
+  border: solid black 1px;
+  border-radius: 5px;
+  text-align: center;
+  background-color:#ffffcc;
+  padding: 5px;
+  
+}
+
+.prevButton, .nextButton{
+  background-color: #ffffcc;
+  border: solid black 1px;
+  border-radius: 5px;
+  width: 100%;
+  padding: 6px;
+  cursor: pointer;
+  margin-top: 16px;
+}
+
+.prevButton:hover, .nextButton:hover{
+  font-weight: bold;
+  background-color: #ffff7a;
+}
+
+/* ANSWER STYLING */
+
+h3{
+  text-align: center;
+  font-size: 30px;
+}
+
+.feedback p{
+  text-align: center;
+  font-size: 24px;
+}
+
+/*FINAL PAGE*/
+
+.playAgain{
+  border: solid black 1px;
+  background-color: #ffffcc;
+  border-radius: 5px;
+  width: 350px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  color: #20603C;
+}
+
+.playAgain p{
+  text-align: center;
+  font-size: 24px;
+}
+
+.restart{
+  text-align: center;
+}
+
+.restartButton{
+  border: solid black 1px;
+  border-radius: 5px;
+  padding: 10px;
+  cursor: pointer;
+  background: green;
+  color: white;
+  transition-duration: 0.2s;
+  box-shadow: 0 5px #666;
+  margin-bottom: 10px;
+}
+
+.restartButton:hover{
+  background: #00e600;
+  color: black;
+}
+
+.restartButton:active{
+  box-shadow: 0 2px #666;
+  transform: translateY(4px);
+}
+.js-display-hide{
+  display: none;
+}
+

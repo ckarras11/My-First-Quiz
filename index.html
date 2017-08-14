@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <meta name="description" content="Learn shapes, colors, numbers, and more!">
+    <title>My 1st Quiz</title>
+    <link href="index.css" rel="stylesheet" type="text/css" />
+    <link href="float-grid.css" rel="stylesheet" type="text/css" />
+    <link href="https://fonts.googleapis.com/css?family=Chewy|Share" rel="stylesheet">
+  </head>
+  <body>
+    <header class="title" role="banner">
+      <div>
+        <img class="blocks" src="http://clipartix.com/wp-content/uploads/2016/09/Abc-blocks-clipart-black-and-white-free.png" alt="Toy blocks stacked with the letters A,B,C">
+      </div>
+      <div>
+        <h1>My 1<sup>st</sup> Quiz</h1>
+      </div>
+      <div>
+        <img class="numbers" src="http://weclipart.com/gimg/F24A8DDB7AD9EE51/123-blocks-300x228.png" alt="Toy blocks stacked with the numbers 1, 2, 3">
+      </div>
+      
+    </header>
+    
+    <!-- START PAGE -->
+    
+    <section class="start" role="region">
+      <p>This quiz is designed with a 2 year old in mind.</p>
+      <p>Are you ready to get started?</p>
+      <div>
+        <button class="startButton">Go</button>
+      </div>
+    </section>
+
+    
+    <!-- QUESTION PAGES -->
+    
+    <!-- SCORE AND QUESTION NuM -->
+    <section class="questionInfo js-display-hide" role="region">
+      <div class="questionNum col-6">
+          <p></p>
+      </div>
+      <div class="score col-6">
+          <p>Score 1/10</p> 
+      </div>
+    </section>
+    <!-- QUESTION 1 -->
+    
+    <section id="1" class="mainQuest question1 col-12 js-display-hide" role="region">
+      
+      <h2>Which color is blue?</h2>
+      <div class="col-6">
+        <form id="q1" role="form">
+          <label class="wrong answers yellow">
+            <input type="radio" name="color1" value="yellow">
+          </label>
+          <label class="answers blue">
+            <input type="radio" name="color1" value="blue">
+          </label>
+          <label class="wrong answers pink">
+            <input type="radio" name="color1" value="pink">
+          </label>
+          <label class="wrong answers red">
+            <input type="radio" name="color1" value="red">
+          </label>
+        </form>
+      </div>
+      <div class="feedback ans1 col-6">
+        <h3></h3>
+        <p></p>
+      </div>
+    </section>  
+    
+    <!-- QUESTION 2 -->
+    
+    <section id="2" class="mainQuest question2 col-12 js-display-hide" role="region">
+      <h2>Which color is purple?</h2>
+      <div class="col-6">
+        <form id="q2" role="form">
+          <label class="wrong answers orange">
+            <input type="radio" name="color2" value="orange">
+          </label>
+          <label class="wrong answers brown">
+            <input type="radio" name="color2" value="brown">
+          </label>
+          <label class="answers purple">
+            <input type="radio" name="color2" value="purple">
+          </label>
+          <label class="wrong answers red">
+            <input type="radio" name="color2" value="red">
+          </label>
+        </form>
+      </div>
+      <div class="feedback ans2 col-6">
+        <h3></h3>
+        <p></p>
+      </div>
+    </section>
+    
+    <!-- QUESTION 3 -->
+    
+    <section id="3" class="mainQuest question3 col-12 js-display-hide" role="region">
+      <h2>Which color is green?</h2>
+      <div class="col-6">
+        <form id="q3" role="form">
+          <label class="wrong answers black">
+            <input type="radio" name="color3" value="black">
+          </label>
+          <label class="wrong answers white">
+            <input type="radio" name="color3" value="white">
+          </label>
+          <label class="wrong answers yellow">
+            <input type="radio" name="color3" value="yellow">
+          </label>
+          <label class="answers green">
+            <input type="radio" name="color3" value="green">
+          </label>
+        </form>
+      </div>
+      <div class="feedback ans3 col-6">
+        <h3></h3>
+        <p></p>
+      </div>
+    </section>
+    
+    <!-- QUESTION 4 -->
+    
+    <section id="4" class="mainQuest question4 col-12 js-display-hide" role="region">
+      <h2>Which shape is a circle?</h2>
+      <div class="col-6">
+        <form id="q4" role="form">
+          <label class="shapeAnswer">
+            <input type="radio" name="shape1" value="circle"><img class="circle" src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a0/Circle_-_black_simple.svg/2000px-Circle_-_black_simple.svg.png" alt="Picture of a circle">
+          </label>
+          <label class="wrong shapeAnswer">
+            <input type="radio" name="shape1" value="rectangle"><img class="rectangle" src="http://www.kidsmathgamesonline.com/images/pictures/shapes/rectangle.jpg" alt="Picture of a rectangle">
+          </label>
+          <label class="wrong shapeAnswer">
+            <input type="radio" name="shape1" value="star"><img class="star" src="http://images.clipartpanda.com/white-stars-clipart-RTdoMMRT9.png" alt="Picture of a star">
+          </label>
+          <label class="wrong shapeAnswer">
+            <input type="radio" name="shape1" value="diamond"><img class="diamond" src="http://images.clipartpanda.com/diamond-shape-clip-art-yioebnL6T.svg" alt="Picture of a diamond">
+          </label>
+        </form>
+      </div>
+      <div class="feedback ans4 col-6">
+        <h3></h3>
+        <p></p>
+      </div>
+    </section>
+    
+    <!-- QUESTION 5 -->
+    
+    <section id="5" class="mainQuest question5 col-12 js-display-hide" role="region">
+      <h2>Which shape is a square?</h2>
+      <div class="col-6">
+        <form id="q5" role="form">
+          <label class="wrong shapeAnswer">
+            <input type="radio" name="shape2" value="heart"><img class="heart" src="http://www.clker.com/cliparts/t/d/c/6/3/B/small-red-heart-with-transparent-background.svg" alt="Picture of a heart">
+          </label>
+          <label class="shapeAnswer">
+            <input type="radio" name="shape2" value="square"><img class="square" src="http://etc.usf.edu/clipart/40600/40690/pb_sq_40690_lg.gif" alt="Picture of a square">
+          </label>
+          <label class="wrong shapeAnswer">
+            <input type="radio" name="shape2" value="circle"><img class="circle" src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a0/Circle_-_black_simple.svg/2000px-Circle_-_black_simple.svg.png" alt="Picture of a circle">
+          </label>
+          <label class="wrong shapeAnswer">
+            <input type="radio" name="shape2" value="octagon"><img class="octagon" src="http://www.clker.com/cliparts/U/q/8/W/s/j/gdfgdg-ggfg.svg.med.png" alt="Picture of an octagon">
+          </label>
+        </form>
+      </div>
+      <div class="feedback ans5 col-6">
+        <h3></h3>
+        <p></p>
+      </div>
+    </section>
+    
+    <!-- QUESTION 6 -->
+    
+    <section id="6" class="mainQuest question6 col-12 js-display-hide" role="region">
+      <h2>Which shape is a heart?</h2>
+      <div class="col-6">
+        <form id="q6" role="form">
+          <label class="wrong shapeAnswer">
+            <input type="radio" name="shape3" value="oval"><img class="oval" src="https://openclipart.org/download/224521/Basic-Oval.svg" alt="Picture of an oval">
+          </label>
+          <label class="shapeAnswer">
+            <input type="radio" name="shape3" value="heart"><img class="heart" src="http://www.clker.com/cliparts/t/d/c/6/3/B/small-red-heart-with-transparent-background.svg" alt="Picture of a heart">
+          </label>
+          <label class="wrong shapeAnswer">
+            <input type="radio" name="shape3" value="diamond"><img class="diamond" src="http://images.clipartpanda.com/diamond-shape-clip-art-yioebnL6T.svg" alt="Picture of a diamond">
+          </label>
+          <label class="wrong shapeAnswer">
+            <input type="radio" name="shape3" value="square"><img class="square" src="http://etc.usf.edu/clipart/40600/40690/pb_sq_40690_lg.gif" alt="Picture of a square">
+          </label>
+        </form>
+      </div>
+      <div class="feedback ans6 col-6">
+        <h3></h3>
+        <p></p>
+      </div>
+    </section>
+    
+    <!-- QUESTION 7 -->
+    
+    <section id="7" class="mainQuest question7 col-12 js-display-hide" role="region">
+      <h2>Where is the number 2?</h2>
+      <div class="col-6">
+        <form id="q7" role="form">
+          <label class="wrong textAnswer text">
+            <input type="radio" name="number1" value="1">1
+          </label>
+          <label class="wrong textAnswer text">
+            <input type="radio" name="number1" value="5">5
+          </label>
+          <label class="wrong textAnswer text">
+            <input type="radio" name="number1" value="4">4
+          </label>
+          <label class="textAnswer text">
+            <input type="radio" name="number1" value="2">2
+          </label>
+        </form>
+      </div>
+      <div class="feedback ans7 col-6">
+        <h3></h3>
+        <p></p>
+      </div>
+    </section>
+    
+    <!-- QUESTION 8 -->
+    
+    <section id="8" class="mainQuest question8 col-12 js-display-hide" role="region">
+      <h2>Where is the number 1?</h2>
+      <div class="col-6">
+        <form id="q8" role="form">
+          <label class="wrong textAnswer text">
+            <input type="radio" name="number2" value="6">6
+          </label>
+          <label class="wrong textAnswer text">
+            <input type="radio" name="number2" value="3">3
+          </label>
+          <label class="textAnswer text">
+            <input type="radio" name="number2" value="1">1
+          </label>
+          <label class="wrong textAnswer text">
+            <input type="radio" name="number2" value="2">2
+          </label>
+        </form>
+      </div>
+      <div class="feedback ans8 col-6">
+        <h3></h3>
+        <p></p>
+      </div>
+    </section>
+    
+    <!-- QUESTION 9 -->
+    
+    <section id="9" class="mainQuest question9 col-12 js-display-hide" role="region">
+      <h2>Where is the letter 'P'</h2>
+      <div class="col-6">
+        <form id="q9" role="form">
+          <label class="wrong textAnswer text">
+            <input type="radio" name="letter1" value="l">L
+          </label>
+          <label class="wrong textAnswer text">
+            <input type="radio" name="letter1" value="m">M
+          </label>
+          <label class="textAnswer text">
+            <input type="radio" name="letter1" value="p">P
+          </label>
+          <label class="wrong textAnswer text">
+            <input type="radio" name="letter1" value="o">O
+          </label>
+        </form>
+      </div>
+      <div class="feedback ans9 col-6">
+        <h3></h3>
+        <p></p>
+      </div>
+    </section>
+    
+    <!-- QUESTION 10 -->
+    
+    <section id="10" class="mainQuest question10 col-12 js-display-hide" role="region">
+      <h2>Where is the letter 'K'</h2>
+      <div class="col-6">
+        <form id="q10" role="form">
+          <label class="wrong textAnswer text">
+            <input type="radio" name="letter2" value="c">C
+          </label>
+          <label class="textAnswer text">
+            <input type="radio" name="letter2" value="k">K
+          </label>
+          <label class="wrong textAnswer text">
+            <input type="radio" name="letter2" value="a">A
+          </label>
+          <label class="wrong textAnswer text">
+            <input type="radio" name="letter2" value="d">D
+          </label>
+        </form>
+      </div>
+      <div class="feedback ans10 col-6">
+        <h3></h3>
+        <p></p>
+      </div>
+    </section>
+    
+    <!-- TEST FOOTER -->
+    <footer class ="nav js-display-hide" role="contentinfo">
+      <!--
+      <div class="prev col-3">
+        <button class="prevButton">Previous</button>
+      </div>
+      -->
+      <div class="next col-3">
+        <button class="nextButton">Next</button>
+      </div>
+    </footer> 
+    
+
+    
+    <!-- FINAL PAGE -->
+    
+    <section class="playAgain js-display-hide" role="region">
+      <h3>Congratulations!</h3>
+      <p>Your score was <span class="finalScore"></span> would you like to play again?</p>
+      <div class="restart">
+        <button class="restartButton">Click here to play again!</button>
+      </div>
+    </section>
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script src="index.js"></script>
+  </body>
+</html>
